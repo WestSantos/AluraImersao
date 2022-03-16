@@ -1,87 +1,145 @@
-<html>
-    <head>
-        <title> Imersão Dev Alura - Aula 01</title>
-        <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    </head>
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Imersão Dev Alura - Aula 01</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+
     <body>
-       
-            <header class="cabecalho">
-                <div class="divCabecalho">
+
+        <header class="cabecalho">
+            <div class="positionDiv">
+                <div class="imgCabecalho">
                     <a href="https://alura.com.br/" target="_blank">
                         <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
-                        <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg" class="page-logo" alt="">
+                        <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg"
+                             class="page-logo" alt="">
                     </a>
-                    <div class="menu">
-                        <a href="#"><p>Minha Média |</p></a>
-                        <a href="#"><p> Sobre |</p></a>
-                        <a href="#"><p> Contatos </p></a>
+                </div>
+                <div class="menu">
+                    <a href="#sobre" class="buttonMenu">
+                        <p>Sobre</p>
+                    </a>
+
+                </div>
+            </div>
+        </header>
+
+
+
+        <section class="container1">
+            <h1 class="page-title">
+                Calculadora de média
+            </h1>
+            <p class="page-subtitle">
+                Descubra qual a sua média de nota de todas as provas!
+            </p>
+
+            <div class="formulario">
+
+                
+                    <div class="mb-3">
+                        <label for="name" class="form-label"><strong>Nome</strong></label>
+                        <input id="nome" lass="form-control-sm" type="text" name="name"
+                               placeholder="Informe o seu Nome..." required>
                     </div>
 
-                </div>
-            </header>
-        
-    
-        
-            <section class="container">
-                <h1 class="page-title">
-                    Calculadora de média
-                </h1>
-                <p class="page-subtitle">
-                    Descubra qual a sua média de nota de todas as provas!
-                </p>
-                <div class="col">
-					
-                        <form action="#" method="POST">
-                            <div class="mb-3">
-                                <label for="name" class="form-label"><strong>Nome</strong></label>
-                                <input class="form-control-sm" type="text" name="name" placeholder="Digite o seu Nome" required>
-                            </div>
 
-                            <br>
-                            <br>
-                            <br>
-                            <br>
+                    <div class="tamanho">
+                        <p><strong>Digite suas Notas Bimestrais </strong></p>
+
+
+                        <div class="mb-3">
+                            <label for="nota_01" class="form-label"><strong>1° Bimestre</strong></label>
+                            <input id="nota1" class="form-control-sm" type="number" name="nota_01" placeholder="1° Bim"
+                                   max="10" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="nota_02" class="form-label"><strong>2° Bimestre</strong></label>
+                            <input id="nota2" class="form-control-sm" type="number" name="nota_02" placeholder="2° Bim"
+                                   max="10" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="nota_03" class="form-label"><strong>3° Bimestre</strong></label>
+                            <input id="nota3" class="form-control-sm" type="number" name="nota_03" placeholder="3° Bim"
+                                   max="10" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="nota_04" class="form-label"><strong>4° Bimestre</strong></label>
+                            <input id="nota4" class="form-control-sm" type="number" name="nota_04" placeholder="4° Bim"
+                                   max="10" required>
+                        </div>
+
+                        <div class="col-12">
+                            <button id="submit" class="btn btn-primary" type="submit">Calcular</button>
+                        </div>
+                        <div class="result">
+                            <h5>Resultado:</h5>
+                            <p id="resultado"></p>
+                        </div>
+                    </div>
+
                 
-                            <div class="mb-3">
-                                <label for="nota_01" class="form-label"><strong>1° Nota</strong></label>
-                                <input class="form-control-sm" type="number" name="nota_01" placeholder="Digite a nota do 1° Bimestre" required>
-                            </div>
 
-                            <div class="mb-3">
-                                <label for="nota_02" class="form-label"><strong>2° Nota</strong></label>
-                                <input class="form-control-sm" type="number" name="nota_02" placeholder="Digite a nota do 2° Bimestre" required>
-                            </div>
 
-                            <div class="mb-3">
-                                <label for="nota_03" class="form-label"><strong>3° Nota</strong></label>
-                                <input class="form-control-sm" type="number" name="nota_03" placeholder="Digite a nota do 3° Bimestre" required>
-                            </div>
 
-                            <div class="mb-3">
-                                <label for="nota_04" class="form-label"><strong>4° Nota</strong></label>
-                                <input class="form-control-sm" type="number" name="nota_04" placeholder="Digite a nota do 4° Bimestre" required>
-                            </div>
+            </div>
 
-                            <div class="col-12">
-                                <button class="btn btn-primary" type="submit">Submit form</button>
-                            </div>
-                                
-                        </form>  
-                   
-                </div>
-                    
-            </section>
-       
+        </section>
 
-            <footer>
-                <div class="footer-content">
-                    <h3>Sobre</h3>
-                    <p>Sobre</p>
-                    <h3>Contatos</h3>
-                </div>
-            </footer>
+
+        <footer>
+            <div class="footer-content" id="sobre">
+                <h3>Sobre</h3>
+                <p id="ctt">Site desenvolvido por meio do <strong>Projeto Imersão da Alura</strong> e modificado por mim
+                    para ficar com um layout mais clean e responsivo.</p>
+
+                <h3>Contatos</h3>
+
+                <p id="ctt">Me Siga nas Redes Socias ou Entre em contato😉</p>
+
+                <a href="https://wa.me/message/G4FXOZFUYTXPE1" target="_blank"><img
+                         src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"
+                         alt="whatsApp"></a>
+
+                <a href="https://www.linkedin.com/in/weslley-teodoro-7255b7174" target="_blank"><img
+                         src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"
+                         alt="LinkedIn" target="_blank"></a>
+
+                <a href="https://github.com/WestSantos" target="_blank"><img
+                         src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"
+                         alt="LinkedIn" target="_blank"></a>
+
+                <a href="https://web.facebook.com/weslley.teodoro.359" target="_blank"><img
+                         src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white"
+                         alt="Facebook"></a>
+
+                <a href="https://instagram.com/weslley.santos4545" target="_blank"><img
+                         src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white"
+                         alt="Instagram"></a>
+
+                <a href="mailto:weslley.santos4545@gmail.com"><img
+                         src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"
+                         alt="G-mail" target="_blank"></a>
+
+
+
+
+            </div>
+        </footer>
     </body>
     <script src="./assets/js/media.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+
 </html>

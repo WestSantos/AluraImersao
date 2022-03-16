@@ -1,103 +1,398 @@
-body {
-    display: block;
-    flex-direction: column;
-    font-family: 'Roboto Mono',monospace;
+body{
+    margin: 0;
+   
+}
+
+header.cabecalho {
+  display: flex;
+  height: 60px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.cabecalho div{
+  width: 100%;
+  position: fixed;
+  
+}
+
+.positionDiv{
+  background-color: #0E7886;
+  height: 47px;
+  width: 100%;
+}
+
+div.menu{
+  display: flex;
+  justify-content: end;
+  height: 60px;
+  padding-top: 2px;
+  padding-right: 18px;
+}
+
+
+.menu a{
+  text-decoration: none;
+}
+
+.buttonMenu p {
+  color: #ffffff;
+  margin: 10 5 10 5;    
+  font-size: 18px;
+  border: 2px solid #6eaeb6;
+  border-radius: 10px;
+  background-color: #6eaeb6;
+  padding: 2px 10px;
+  cursor: pointer;
+}
+.buttonMenu p:hover{
+  background-color: #042428;
+  border: 2px solid #042428;
+}
+
+.imgCabecalho{
+  height: 60px;
+  padding-left: 18px;
+}
+
+.imgCabecalho img {
+  margin: 0 5;
+  background-color: #0E7886;
+
+}
+
+.alura-logo {
+  width: 55px;
+  max-width: 100%;
+  padding: 10 0;
+}
+
+.page-logo {
+  width: 200px;
+  max-width: 100%;
+  padding-top: 4px;
+  padding-left: 9px;
+}
+
+
+.page-title{
+  font-size: 60px;
+}
+
+.page-subtitle{
+  color: #010c0d;
+  font-size: 23px;
+}
+
+.tamanho p{
+  font-size: 18px;
+}
+
+
+
+footer div {
+  bottom: 0px;
+  width: 100%;
+  height: 13em;
+  background-color: #0E7886;
+  color:white;
+  display: block;
+}
+.footer-content img{
+  border-radius: 16px;
+}
+
+.footer-content{
+  text-align: center;
+  padding-bottom: 5px ;
+}
+
+#ctt{
+  margin: 9px;
+}
+
+.result{
+  padding-top: 15px;
+
+}
+#resultado{
+  color: #010c0d;
+  font-size: 16px;
+
+}
+
+
+@media only screen and (max-width: 600px) {
+  section.container1{
+    height: 520px;
+    color:#073c43;
+    text-align: center;
     background-image: url("../../assets/img/fundo.png");
     background-color: #ffffff;
-    background-size: 80vh;
-    background-position: center bottom;
+    background-size: 100%;
+    background-position: center top;
     background-repeat: no-repeat;
-   
-  }
-
-
-  header {
-    overflow: hidden;
-    background-color: #0E7886;
-    width: 100%;
-    position: fixed;   
-  }
-
- 
-  .divCabecalho, .menu {
-    display: flex;
-    margin: 3;
-    justify-content: space-between;
-  }
-
-  .menu p {
-    color: #ffffff;
-    margin: 10 5 10 5;    
-    font-size: 18px;
   }
   
-  .menu a {
-    text-decoration: none;
+  input{
+    width: 60%;
   }
 
-  .divCabecalho img {
-    margin: 0 5;
+  .positionDiv{
+    background-color: #0E7886;
+    height: 45px;
+    width: 100%;
+  }
+  
+  .tamanho input{
+    width: 20%;
   }
 
+  
   .alura-logo {
-    width: 55px;
+    width: 43px;
     max-width: 100%;
     top: 10px;
     right: 10px;
     padding: 10 0;
   }
-
+  
   .page-logo {
-    width: 200px;
+    width: 150px;
     max-width: 100%;
-    padding: 2 0;
+    padding: 3 0 0 0;
+  }
+
+  .menu .buttonMenu{
+   display: none;
+  }
+
+  .page-title{
+    font-size: 25px;
+  }
+
+  .page-subtitle{
+    color: #010c0d;
+    font-size: 12px;
+  }
+  footer div {
+    bottom: 0px;
+    width: 100%;
+    height: 16em;
+    background-color: #0E7886;
+    color:white;
+    display: block;
   }
 
  
- 
-  .container {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 80 0 0 0;
-    height: 10px;
-    flex: 1 0 auto;
-    
-  
-  }
-  
-  .page-title {
-    color:#073c43;
-    margin: 0;
-   
-  }
-  
-  .page-subtitle {
-    color:#073c43;
-    width: 100%;
-    
-  }
-  
-  footer{
-    position: absolute;
-    bottom: -60%;
-    width: 100%;
-    height: 350px;
-    max-height: 100%;
-    background: #0E7886;
-    color: #fff;
-    margin: 10 0 0;
-   
-    
-  }
-
-
-  .footer-content{
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
 }
- 
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  section.container1{
+    height: 520px;
+    color:#073c43;
+    text-align: center;
+    background-image: url("../../assets/img/fundo.png");
+    background-color: #ffffff;
+    background-size: 70%;
+    background-position: center top;
+    background-repeat: no-repeat;
+  }
+  
+  input{
+    width: 40%;
+    
+  }
+
+  .positionDiv{
+    background-color: #0E7886;
+    height: 40px;
+    width: 100%;
+  }
+  
+  .tamanho input{
+    width: 16%;
+  }
+
+  
+  .alura-logo {
+    width: 43px;
+    max-width: 100%;
+    top: 10px;
+    right: 10px;
+    padding: 10 0;
+  }
+  
+  .page-logo {
+    width: 150px;
+    max-width: 100%;
+    padding: 3 0 0 0;
+  }
+
+  .menu{
+    display: flex;
+    justify-content: end;
+    height: 60px;
+    padding-top: 4px;
+    padding-right: 18px;
+  }
+
+  .page-title{
+    font-size: 45px;
+  }
+
+  .page-subtitle{
+    color: #010c0d;
+    font-size: 18px;
+  }
+
+
+
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  section.container1{
+    height: 520px;
+    color:#073c43;
+    text-align: center;
+    background-image: url("../../assets/img/fundo.png");
+    background-color: #ffffff;
+    background-size: 57%;
+    background-position: center top;
+    background-repeat: no-repeat;
+  }
+  
+  input{
+    width: 30%;
+    
+  }
+
+  .positionDiv{
+    background-color: #0E7886;
+    height: 40px;
+    width: 100%;
+  }
+  
+  .tamanho input{
+    width: 16%;
+  }
+
+  
+  .alura-logo {
+    width: 43px;
+    max-width: 100%;
+    top: 10px;
+    right: 10px;
+    padding: 10 0;
+  }
+  
+  .page-logo {
+    width: 150px;
+    max-width: 100%;
+    padding: 3 0 0 0;
+  }
+
+  .menu{
+    display: flex;
+    justify-content: end;
+    height: 60px;
+    padding-top: 4px;
+    padding-right: 18px;
+  }
+
+  .page-title{
+    font-size: 45px;
+  }
+
+  .page-subtitle{
+    color: #010c0d;
+    font-size: 18px;
+  }
+
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  section.container1{
+    height: 520px;
+    color:#073c43;
+    text-align: center;
+    background-image: url("../../assets/img/fundo.png");
+    background-color: #ffffff;
+    background-size: 50%;
+    background-position: center top;
+    background-repeat: no-repeat;
+  }
+  
+  input{
+    width: 20%;
+    
+  }
+
+  .positionDiv{
+    background-color: #0E7886;
+    height: 40px;
+    width: 100%;
+  }
+  
+  .tamanho input{
+    width: 12%;
+  }
+
+  
+  .alura-logo {
+    width: 43px;
+    max-width: 100%;
+    top: 10px;
+    right: 10px;
+    padding: 10 0;
+  }
+  
+  .page-logo {
+    width: 150px;
+    max-width: 100%;
+    padding: 3 0 0 0;
+  }
+
+  .menu{
+    display: flex;
+    justify-content: end;
+    height: 60px;
+    padding-top: 4px;
+    padding-right: 18px;
+  }
+
+  .page-title{
+    font-size: 50px;
+  }
+
+  .page-subtitle{
+    color: #010c0d;
+    font-size: 20px;
+  }
+
+    
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  section.container1{
+    height: 629px;
+    color:#073c43;
+    text-align: center;
+    background-image: url("../../assets/img/fundo.png");
+    background-color: #ffffff;
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+}
+
+
+

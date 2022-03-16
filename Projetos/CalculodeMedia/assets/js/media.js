@@ -1,13 +1,27 @@
-let nome ="Weslley"
+document.getElementById("submit").onclick = function (e) {
+    const nome = document.getElementById("nome").value
+    const primeiraNota = parseFloat(document.getElementById("nota1").value)
+    const segundaNota = parseFloat(document.getElementById("nota2").value)
+    const terceiraNota = parseFloat(document.getElementById("nota3").value)
+    const quartaNota = parseFloat(document.getElementById("nota4").value)
+  
+    const notaFinal = (
+      (primeiraNota + segundaNota + terceiraNota + quartaNota) / 4).toFixed(1)
+  
+    let resultado
+  
+    if (notaFinal >= 6) {
+      resultado = "Aprovado(a)"
+    } 
+    else if (notaFinal <= 5) {
+      resultado = "reprovado(a)"
+    }
+  
+    document.getElementById("resultado").innerHTML = nome + ` você ficou com nota <strong>${notaFinal}</strong> e foi <strong>${resultado}</strong>`
+  }
 
-let notaDoPrimeiroBimestre = 10
-let notaDoSegundoBimestre = 5
-let notaDoTerceiroBimestre = 10
-let notaDoQuartoBimestre = 8
 
-let notaFinal = (notaDoPrimeiroBimestre + notaDoSegundoBimestre + notaDoTerceiroBimestre + notaDoQuartoBimestre)/4
 
-let notaArredondada = notaFinal.toFixed(1)
 
-console.log("Bem Vindo " + nome)
-console.log(notaArredondada)
+
+
