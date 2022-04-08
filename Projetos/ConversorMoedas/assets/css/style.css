@@ -1,8 +1,7 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-image: url("");
-  background-repeat: no-repeat;
   margin: 0;
+  background-color: #b6d3fe;
 }
 
 .cabecalho, .divCabecalho{
@@ -17,54 +16,64 @@ body {
 
 .conteudo{
   background-color: #b6d3fe;
-  position: fixed;
+  position: relative;
   width: 100%;
-  height: 100%;
-  text-align: center;
-}
-
-.rodape{
-  background-color: #0D6EFD;
-  width: 100%;
-  height: 40px;
-  position: fixed;
-  bottom: 0;
-}
-
-.corversor{
+  height: 500px;
   
+}
+
+.container1{
+  margin: auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 300px;
+  border-radius: 25px;
+  
+}
+
+
+#from_ammount, #to_ammount{
+  width: 90px;
+  display: inline-block;
+  
+  
+}
+
+#from_currency, #to_currency{
+  margin: 3px;
+ 
+}
+
+#swap{
+  float: right;
+  margin-top: 20px;
+
+}
+
+.page-title {
+  color: #0D6EFD;
+  margin: 0 0 5px;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+}
+
+label {
+  color: black;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
 }
 
 #tax_info{
   display: none;
 }
 
-#from_currency{
- 
-}
-
-#to_currency{
- 
-}
-
-
-
-
-
-
-
-
-
-
-
-
-.page-title {
-  color: #ffffff;
-  margin: 0 0 5px;
-}
-
 .page-logo {
-  width: 200px;
+  width: 280px;
+  display: block;
+  margin: auto;
+  padding: 15px;
 }
 
 .alura-logo {
@@ -74,24 +83,34 @@ body {
   right: 10px;
 }
 
-input {
-  margin: 12px;
-  padding: 6px;
-  border-radius: 5px;
+footer div {
+  bottom: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: #0D6EFD;
+  color:white;
+  display: block;
+  padding: 15px;
+  
+}
+.footer-content img{
+  border-radius: 16px;
+  padding-top: 3px;
 }
 
-label {
-  color: white;
+.footer-content{
+  text-align: center;
+  padding-bottom: 5px ;
 }
 
-button {
-  margin-top: 12px;
-  padding: 4px 8px;
-  border-radius: 10px;
-  background: #ffffff;
-}
-
-h2 {
-  color: #ffffff;
-  font-size: 30px;
+@media only screen and (min-width: 1200px) {
+  
+    .conteudo{
+      background-color: #b6d3fe;
+      position: relative;
+      width: 100%;
+      height: 627px;
+      
+    
+  }
 }
