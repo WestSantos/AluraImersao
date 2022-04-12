@@ -1,23 +1,34 @@
-function Chutar(){
-    var numeroSecreto = parseInt(Math.random() * 11);
+var count= 0
 
-    var chute = parseInt(document.getElementById("valor").value);
+
+
+
+    function Chutar(){
+        var numeroSecreto = parseInt(Math.random() * 11);
+        count++
+        
+        var elementoResultado = document.getElementById("resultado");
+        var chute = parseInt(document.getElementById("valor").value);
+        
+ 
+
+            if (chute == numeroSecreto) {
+                
+                elementoResultado.innerHTML = "Você acertou";
+                
+            } else if (chute > 10 || chute < 0){
+                elementoResultado.innerHTML = "Você deve digitar um número de 0 a 10";
+        
+            }else if(count == 3){
+                elementoResultado.innerHTML = "Você errou 3 vezes o numero correto era "+numeroSecreto;
+            }else {
+                elementoResultado.innerHTML = "Errou, tente novamente";
+            };
+        console.log(numeroSecreto)
+        console.log(count)
+            
+        };
     
-    if (chute == numeroSecreto) {
-        
-        alert("Você ACERTOU! O numero correto é: " +numeroSecreto);
-        
-    } else if (chute > 10 || chute < 0){
-        alert("Numero Invalido, Digite um entre 0 e 10");
 
+ 
 
-    }else {
-        alert("Você Errou Tente novamente");
-    };
-}
-
-Chutar();
-
-//numero de tentativas 3 
-// numero secreto maior ou menor na mensagem de erro
-//
