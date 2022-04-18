@@ -1,61 +1,143 @@
 body {
   font-family: "Roboto Mono", monospace;
-  min-height: 600px;
-  background-image: url("https://www.alura.com.br/assets/img/imersoes/dev-2021/dia-03-mentalista.png");
-  background-color: #000000;
+  background-color: #ffbed3;
+  background-image: url('../img/back.webp');
+  background-color: #ffbed3;
   background-size: cover;
   background-position: center bottom;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; 
+  margin: 0;
+  
+}
+
+header{
+  background-color: #cc4b74;
+  height: 40px;
+  width: 100%;
+  
+}
+
+.cabecalho{
+  background-color: #cc4b74;
+  position: fixed;
+  height: 40px;
+  width: 100%;
+  
+}
+
+.alura-logo {
+  width: 75px;
+  float: right;
+}
+
+.page-logo {
+  width: 170px;
+}
+
+.cabecalho img{
+  margin: 2px 15px;
+  
 }
 
 .container {
   text-align: center;
-  padding: 20px;
-  height: 100vh;
+  height: 500px;
+  width: 100%;
 }
 
 .page-title {
-  color: #ffffff;
-  margin: 0 0 5px;
+  color: #4c1c2b;
+  padding: 90px 0 5px;
+  margin: 0;
 }
 
 .page-subtitle {
-  color: #ffffff;
+  color: #4c1c2b;
   margin-top: 16px;
 }
 
-.page-logo {
-  width: 200px;
-}
 
-.alura-logo {
-  width: 40px;
-  position: absolute;
-  top: 10px;
-  right: 10px;
-}
 
-@media (max-height: 500px) {
-  body {
-    min-height: 800px;
-  }
-}
+
+
 
 input {
   margin: 4px;
-  padding: 6px;
-  border-radius: 5px;
+  padding: 9px 15px;
+  border-radius: 10px;
+  border: 3px solid #cc4b74;
 }
 
 button {
+  font-size: 16px;
+  font-weight: 600;
+  color: #4c1c2b;
   margin-top: 12px;
-  padding: 4px 8px;
+  padding: 8px 16px;
   border-radius: 10px;
   background: #ffffff;
+  border: 3px solid #cc4b74;
+  cursor: pointer;
 }
 
 .resultado {
-  color: #ffffff;
+  color: #4c1c2b;
   text-align: center;
   margin-top: 16px;
+}
+
+.placar {
+  color: #4c1c2b;
+  margin: auto;
+  background-color: #ffeef4;
+  width: 350px;
+  padding: 15px 0;
+  border-radius: 25px;
+  border: 3px solid #cc4b74;
+}
+
+.placar p, .placar h2{
+  margin: 2px;
+}
+
+.placar h2{
+  color:#ff5e92;
+}
+
+
+footer div {
+  bottom: 0;
+  width: 100%;
+  position: relative;
+  background-color: #cc4b74;
+  color:white;
+  display: block;
+  padding: 0px;
+  
+}
+.footer-content img{
+  border-radius: 16px;
+  padding-top: 3px;
+}
+
+.footer-content{
+  
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.footer-content h3{
+  margin: 0;
+  padding-top: 5px;
+}
+
+@media only screen and (min-width: 1200px) {
+  
+  .container{
+   
+    width: 100%;
+    height: 675px;
+    
+  
+}
 }
