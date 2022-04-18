@@ -53,3 +53,17 @@ function Chutar() {
     elementoErros.innerHTML = erros;
     elementoContador.innerHTML = count;
 }
+
+ 
+
+
+    
+
+
+    
+
+
+
+
+
+
